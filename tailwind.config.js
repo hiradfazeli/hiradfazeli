@@ -6,7 +6,15 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'primary': ['Montserrat', 'sans-serif'],
+      },
+      colors: {
+        'primary': '#0f0f0f',
+        'secondary': '#f4efde',
+      },
+    },
   },
   plugins: [],
 }
