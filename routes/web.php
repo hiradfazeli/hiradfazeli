@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/contact', 'ContactController@mailContactForm');
 
 Auth::routes();
 
