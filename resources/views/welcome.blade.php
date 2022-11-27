@@ -136,12 +136,8 @@
                         </li>
                     </ul>
                 </article>
-                <article id="projectsPage"
-                    class="popItem popItem hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
-                    <h2 class="text-2xl font-semibold"><a href="https://github.com/hiradfazeli?tab=repositories"
-                            target="_blank">My Projects</a></h2>
-                </article>
-                <article id="workPage" class="popItem popItem hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
+                @include('projects.index')
+                <article id="workPage" class="popItem hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
                     <h2 class="text-2xl font-semibold">Work Experience</h2>
                     <br>
                     <ul class="list leading-10 list-none">
@@ -227,7 +223,7 @@
                     </ul>
                 </article>
                 <article id="educationPage"
-                    class="popItem popItem hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
+                    class="popItem hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
                     <h2 class="text-2xl font-semibold">Education & Certifications</h2>
                     <br>
                     <ul class="list leading-10 list-none">
@@ -301,6 +297,6 @@
     </main>
 
     <footer class="w-full border-4 border-primary clear-both grow-1 justify-center items-center">
-        <p class="copyright font-medium  py-6">&copy;2022 Hirad Fazeli. All rights not reserved!</p>
+        <p class="copyright font-medium  py-6">&copy;2022 Hirad Fazeli. All rights reserved!</p>
     </footer>
 @endsection
