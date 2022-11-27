@@ -1,4 +1,4 @@
-<article id="contactPage" class="popItem popItem hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
+<article id="contactPage" class="popItem hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
     <header>
         <h2 class="text-2xl font-semibold">Contact Me</h2>
     </header>
