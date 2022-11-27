@@ -20,7 +20,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="antialiased h-full font-primary bg-secondary text-primary text-center flex flex-col h=full text-base">
+<body class="antialiased font-montserrat bg-secondary text-primary text-center flex flex-col h-full text-base">
     <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
 
