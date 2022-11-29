@@ -11,7 +11,7 @@
             </label>
             <input type="email" id="email"
                 class="shadow-sm bg-secondary text-primary text-sm
-                    block w-full p-2.5"
+                    block w-full p-3"
                 placeholder="name@example.com" required>
         </div>
         <div>
