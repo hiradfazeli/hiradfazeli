@@ -1,22 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-    <header class="w-full border-4 border-primary flex justify-between grow-1 items-center p-6">
-        <h1 id="logo" class="font-bold text-3xl"><a href="#" class="">Hirad Fazeli</a></h1>
-        @if (Route::has('login'))
-            <section class="">
-                @auth
-                    <a href="{{ url('/home') }}" class="">Home</a>
-                @else
-                    <a href="{{ route('login') }}" class="">Log in</a>
 
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class=" ml-4">Register</a>
-                    @endif
-                @endauth
-            </section>
-        @endif
-    </header>
     <main class="flex flex-wrap flex-1">
         <section class="flex flex-col flex-wrap grow-1 md:w-2/4 w-full">
             <section id="about"
@@ -80,14 +65,14 @@
             </section>
 
             <section id="popup"
-                class="bg-primary opacity-90 h-full hidden fixed inset-y-0 right-0 z-10 text-secondary overflow-y-scroll text-xl md:w-2/4 w-full">
+                class="bg-primary opacity-90 h-full hidden fixed inset-y-0 right-0 z-10 text-secondary overflow-y-scroll text-lg md:w-2/4 w-full">
                 <div id="exit" class="absolute top-8 left-2/4 z-20 mx-auto">
                     <div
                         class="relative right-2/4 px-4 m-4 border-4 border-transparent hover:border-secondary active:bg-secondary active:text-primary">
                         <i class="fa-solid fa-xmark fa-4x"></i>
                     </div>
                 </div>
-                <article id="aboutPage" class="popItem hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
+                <article id="aboutPage" class="hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
                     <h2 class="text-2xl font-semibold">Who Am I?</h2>
                     <br>
                     <ul class="leading-10 list-none">
@@ -137,7 +122,7 @@
                     </ul>
                 </article>
                 @include('projects.index')
-                <article id="workPage" class="popItem hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
+                <article id="workPage" class="hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
                     <h2 class="text-2xl font-semibold">Work Experience</h2>
                     <br>
                     <ul class="list leading-10 list-none">
@@ -223,7 +208,7 @@
                     </ul>
                 </article>
                 <article id="educationPage"
-                    class="popItem hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
+                    class="hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
                     <h2 class="text-2xl font-semibold">Education & Certifications</h2>
                     <br>
                     <ul class="list leading-10 list-none">
@@ -292,11 +277,8 @@
                     </ul>
                 </article>
                 @include('contact.index')
+                @include('auth.login')
             </section>
         </section>
     </main>
-
-    <footer class="w-full border-4 border-primary clear-both grow-1 justify-center items-center">
-        <p class="copyright font-medium  py-6">&copy;2022 Hirad Fazeli. All rights reserved!</p>
-    </footer>
 @endsection
