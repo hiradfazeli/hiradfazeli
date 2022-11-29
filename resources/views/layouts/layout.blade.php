@@ -52,7 +52,9 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+    @include('header.index')
     @yield('content')
+    @include('footer.index')
     
 </body>
 
