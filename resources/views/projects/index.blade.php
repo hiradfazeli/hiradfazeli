@@ -51,7 +51,7 @@
                     Tea Cozy
                 </h3>
                 <p class="mb-3 font-semibold">
-                    Coffe shop, restaurant, bar? Tea Cozy addresses all your needs.
+                    Coffee shop, restaurant, bar? Tea Cozy addresses all your needs.
                 </p>
             </div>
         </a>
