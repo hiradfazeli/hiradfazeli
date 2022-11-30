@@ -66,12 +66,12 @@
 
             <section id="popup"
                 class="bg-primary opacity-90 h-full hidden fixed inset-y-0 right-0 z-10 text-secondary overflow-y-scroll text-lg md:w-2/4 w-full">
-                <div id="exit" class="absolute top-8 left-2/4 z-20 mx-auto">
+                <section id="exit" class="absolute top-8 left-2/4 z-20 mx-auto">
                     <div
                         class="relative right-2/4 px-4 m-4 border-4 border-transparent hover:border-secondary active:bg-secondary active:text-primary">
                         <i class="fa-solid fa-xmark fa-4x"></i>
                     </div>
-                </div>
+                </section>
                 <article id="aboutPage" class="hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
                     <h2 class="text-2xl font-semibold">Who Am I?</h2>
                     <br>
@@ -207,8 +207,7 @@
                         </li>
                     </ul>
                 </article>
-                <article id="educationPage"
-                    class="hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
+                <article id="educationPage" class="hidden relative top-12 mx-auto mt-20 w-4/5 py-4 text-left">
                     <h2 class="text-2xl font-semibold">Education & Certifications</h2>
                     <br>
                     <ul class="list leading-10 list-none">
@@ -278,6 +277,7 @@
                 </article>
                 @include('contact.index')
                 @include('auth.login')
+                @include('auth.register')
             </section>
         </section>
     </main>

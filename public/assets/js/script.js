@@ -42,6 +42,8 @@ about.onclick = function () {
       contactPage.style.display = 'none';
     } else if (loginPage.style.display == 'block') {
       loginPage.style.display = 'none';
+    } else if (registerPage.style.display == 'block') {
+      registerPage.style.display = 'none';
     }
     aboutPage.style.display = 'block';
 };
@@ -62,6 +64,8 @@ projects.onclick = function () {
     contactPage.style.display = 'none';
   } else if (loginPage.style.display == 'block') {
     loginPage.style.display = 'none';
+  } else if (registerPage.style.display == 'block') {
+    registerPage.style.display = 'none';
   }
   projectsPage.style.display = 'block';
 };
@@ -81,6 +85,8 @@ work.onclick = function () {
     contactPage.style.display = 'none';
   } else if (loginPage.style.display == 'block') {
     loginPage.style.display = 'none';
+  } else if (registerPage.style.display == 'block') {
+    registerPage.style.display = 'none';
   }
   workPage.style.display = 'block';
 };
@@ -99,6 +105,8 @@ education.onclick = function () {
     contactPage.style.display = 'none';
   } else if (loginPage.style.display == 'block') {
     loginPage.style.display = 'none';
+  } else if (registerPage.style.display == 'block') {
+    registerPage.style.display = 'none';
   }
   educationPage.style.display = 'block';
 };
@@ -117,6 +125,8 @@ contact.onclick = function () {
     educationPage.style.display = 'none';
   } else if (loginPage.style.display == 'block') {
     loginPage.style.display = 'none';
+  } else if (registerPage.style.display == 'block') {
+    registerPage.style.display = 'none';
   }
   contactPage.style.display = 'block';
 };
@@ -135,8 +145,30 @@ login.onclick = function () {
     educationPage.style.display = 'none';
   } else if (contactPage.style.display == 'block') {
     contactPage.style.display = 'none';
+  } else if (registerPage.style.display == 'block') {
+    registerPage.style.display = 'none';
   }
   loginPage.style.display = 'block';
+};
+
+register.onclick = function () {
+  popup.style.display = 'block';
+  exit.style.display = 'block';
+
+  if (aboutPage.style.display == 'block') {
+    aboutPage.style.display = 'none';
+  } else if (projectsPage.style.display == 'block') {
+    projectsPage.style.display = 'none';
+  } else if (workPage.style.display == 'block') {
+    workPage.style.display = 'none';
+  } else if (educationPage.style.display == 'block') {
+    educationPage.style.display = 'none';
+  } else if (contactPage.style.display == 'block') {
+    contactPage.style.display = 'none';
+  } else if (loginPage.style.display == 'block') {
+    loginPage.style.display = 'none';
+  }
+  registerPage.style.display = 'block';
 };
 
 

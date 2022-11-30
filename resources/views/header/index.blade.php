@@ -3,13 +3,10 @@
     @if (Route::has('login'))
         <ul>
             @auth
-                <li href="{{ url('/home') }}" id="home" class="inline-block">Home</li>
+                <a href="{{ url('/home') }}" id="home" class="inline-block">Home</a>
             @else
-                <li id="login" class="hover:cursor-pointer inline-block">Log in</li>
-
-                @if (Route::has('register'))
-                    <li id="register" class="inline-block ml-4">Register</li>
-                @endif
+                <li id="login" class="hover:cursor-pointer inline-block">Sign In</li>
+                <li id="register" class="hover:cursor-pointer inline-block ml-4">Sign Up</li>
             @endauth
         </section>
     @endif
