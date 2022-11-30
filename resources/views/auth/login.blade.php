@@ -10,7 +10,7 @@
 
                         <div class="row mb-3">
                             <label for="email"
-                                class="col-md-4 col-form-label text-md-end ">{{ __('Email Address') }}</label>
+                                class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
                             <div class="col-md-6 mt-2">
                                 <input id="email" type="email"
@@ -61,7 +61,7 @@
                             <div class="col-md-8 offset-md-4 mt-8">
                                 <button type="submit" class="btn btn-primary mr-6 py-3 px-5 text-sm font-medium text-center text-secondary bg-primary
                                 sm:w-fit hover:bg-secondary hover:text-primary ring-4 ring-secondary focus:ring-4">
-                                    {{ __('Sign in') }}
+                                    {{ __('Sign In') }}
                                 </button>
 
                                 @if (Route::has('password.request'))
